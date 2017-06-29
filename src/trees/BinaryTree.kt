@@ -5,16 +5,12 @@ package trees
  */
 class BinaryTree<K, V> : BinaryTreeADT<K, V>{
     private var key : K? = null
-    private var value : V? = null
+    internal var value : V? = null
     private lateinit var lchild : BinaryTree<K, V>
     private lateinit var rchild : BinaryTree<K, V>
 
     override fun value() : V?{
         return value
-    }
-
-    override fun setValue(value : V) {
-        this.value = value
     }
 
     override fun empty() : Boolean = key == null

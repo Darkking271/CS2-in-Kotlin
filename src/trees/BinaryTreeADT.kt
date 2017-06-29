@@ -5,7 +5,6 @@ package trees
  */
 interface BinaryTreeADT<K, V>{
     fun value() : V?
-    fun setValue(value : V)
     fun empty() : Boolean
     fun height() : Int
     fun preorder()
